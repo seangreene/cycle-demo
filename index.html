@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sample slider</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle.all.js"></script>
+	<style type="text/css" media="screen">#pager span{cursor:pointer;}</style>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function($){
+            
+            $("#container").cycle({
+              "fx"		:"scrollHorz",
+              "timeout"	: 0,
+              "next"	: "#nextbutton",
+              "prev"	: "#previousbutton",
+              "speed"	: 700
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+	<div id="pager"><span id="previousbutton">Previous</span> | <span id="nextbutton">Next</span></div>
+    <div id="container">
+        <img src="http://placekitten.com/600/400&amp;text=Slide+1" />
+        <img src="http://lorempixel.com/output/animals-q-c-600-400-8.jpg&amp;text=Slide+2" />
+        <img src="http://lorempixel.com/output/animals-q-c-600-400-5.jpg&amp;text=Slide+3" />
+        <img src="http://lorempixel.com/output/animals-q-c-600-400-7.jpg&amp;text=Slide+4" />
+        <img src="http://lorempixel.com/output/animals-q-c-600-400-4.jpg&amp;text=Slide+5" />
+        <img src="http://lorempixel.com/output/cats-q-c-600-400-4.jpg&amp;text=Slide+6" />
+    </div>
+</body>
+</html>
